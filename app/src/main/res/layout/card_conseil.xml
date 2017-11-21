@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            >
+
+            <ImageView
+
+                android:id="@+id/imageViewConseil"
+                android:tag="image_tag"
+                android:scaleType="centerCrop"
+                android:layout_height="100dp"
+                android:src="@drawable/abc"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewTitreConseil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Titre Conseil"
+                android:textColor="@color/accent_material_light"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="5dp" />
+
+            <TextView
+                android:text="description conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDescConseil"
+                android:padding="5dp"
+                android:textColor="#000"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:id="@+id/webvv"/>
+
+
+    />
+    </LinearLayout>

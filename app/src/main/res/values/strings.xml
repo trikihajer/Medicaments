@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Medicaments</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="profil_menu">Mes profils</string>
+    <string name="conseil_menu">Conseils</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="femelle">Feminin</string>
+    <string name="masculin">Masculin</string>
+
+
+    <string name="product_name">Product name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="title_activity_display_image">DisplayImage</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_add_profil_capt">AddProfilCapt</string>
+</resources>

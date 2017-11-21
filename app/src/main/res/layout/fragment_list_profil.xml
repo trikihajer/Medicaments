@@ -1,0 +1,39 @@
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bhbh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+        <android.support.design.widget.CoordinatorLayout
+
+         android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.tuteur.projet.medicaments.UI.List_Profil_Fragment" >
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_liste_profil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:layout_anchor="@id/rv_liste_profil"
+                app:layout_anchorGravity="bottom|center"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/addProfil"
+                app:backgroundTint="@android:color/holo_orange_light" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
