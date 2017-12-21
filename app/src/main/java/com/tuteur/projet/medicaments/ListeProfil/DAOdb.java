@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 /**
  * Created by Lenovo on 20/11/2017.
@@ -42,8 +42,8 @@ public class DAOdb {
         ContentValues cv = new ContentValues();
         cv.put(DBhelper.COLUMN_PATH, image.getPath());
         cv.put(DBhelper.COLUMN_TITLE, image.getTitle());
-        cv.put(DBhelper.COLUMN_DESCRIPTION, image.getDescription());
-        cv.put(DBhelper.COLUMN_DATETIME, System.currentTimeMillis());
+        cv.put(DBhelper.COLUMN_DESCRIPTION, image.getSexe());
+        cv.put(DBhelper.COLUMN_DATETIME, image.getDatetimeLong());
         return database.insert(DBhelper.TABLE_NAME, null, cv);
     }
 
@@ -91,9 +91,9 @@ public class DAOdb {
                 cursor.getString(cursor.getColumnIndex(DBhelper.COLUMN_PATH)));
         image.setTitle(
                 cursor.getString(cursor.getColumnIndex(DBhelper.COLUMN_TITLE)));
-        image.setDatetime(cursor.getLong(
+        image.setDatetimeLong(cursor.getString(
                 cursor.getColumnIndex(DBhelper.COLUMN_DATETIME)));
-        image.setDescription(cursor.getString(
+        image.setSexe(cursor.getString(
                 cursor.getColumnIndex(DBhelper.COLUMN_DESCRIPTION)));
         return image;
     }

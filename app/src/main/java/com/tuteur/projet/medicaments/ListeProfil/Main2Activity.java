@@ -1,11 +1,9 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -61,53 +59,6 @@ public class Main2Activity extends ActionBarActivity {
 
     /**
      * take a photo
-     */
-
-    @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
-            case RESULT_LOAD_IMAGE:
-                if (requestCode == RESULT_LOAD_IMAGE &&
-                        resultCode == RESULT_OK && null != data) {
-                    Uri selectedImage = data.getData();
-                    String[] filePathColumn = {MediaStore.Images.Media.DATA};
-                    Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
-                    cursor.moveToFirst();
-                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                    String picturePath = cursor.getString(columnIndex);
-                    cursor.close();
-                    MyImage image = new MyImage();
-                    image.setTitle("Test");
-                    image.setDescription("test choose a photo from gallery and add it to " + "list view");
-                    image.setDatetime(System.currentTimeMillis());
-                    image.setPath(picturePath);
-                    //                    images.add(image);//notifyDataSetChanged does not work well sometimes
-                    imageAdapter.add(image);
-                    daOdb.addImage(image);
-                }
-            case REQUEST_IMAGE_CAPTURE:
-                if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-                    String[] projection = {MediaStore.Images.Media.DATA};
-                    Cursor cursor = managedQuery(mCapturedImageURI, projection, null, null, null);
-                    int column_index_data = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-                    cursor.moveToFirst();
-                    String picturePath = cursor.getString(column_index_data);
-                    MyImage image = new MyImage();
-                    image.setTitle("Test");
-                    image.setDescription("test take a photo and add it to list view");
-                    image.setDatetime(System.currentTimeMillis());
-                    image.setPath(picturePath);
-                    imageAdapter.add(image);
-                    //                    images.add(image);
-                    daOdb.addImage(image);
-                }
-        }
-    }
-
-    /**
-     * item clicked listener used to implement the react action when an item is clicked.
-     *
-     * @param listView
      */
     private void addItemClickListener(final ListView listView) {
         listView.setOnItemClickListener(new OnItemClickListener() {

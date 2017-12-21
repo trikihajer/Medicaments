@@ -3,6 +3,8 @@
     package="com.tuteur.projet.medicaments">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -10,6 +12,17 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <receiver
+        android:name=".NotificationIntentReceiver"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.example.android.support.wearable.notifications.ACTION_EXAMPLE" />
+            <action android:name="com.example.android.support.wearable.notifications.ACTION_ENABLE_MESSAGES" />
+            <action android:name="com.example.android.support.wearable.notifications.ACTION_DISABLE_MESSAGES" />
+        </intent-filter>
+    </receiver>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,17 +30,49 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Model.essai.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".UI.AddProfilActivity" />
-        <activity
-            android:name=".imageEssai.DisplayImage"
+            android:name=".ListeProfil.DisplayImage"
             android:label="@string/title_activity_display_image"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".imageEssai.Main2Activity"
+            android:name=".ListeProfil.Main2Activity"
             android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListeProfil.AddProfilCapt"
+            android:label="@string/title_activity_add_profil_capt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListeMedicas.DisplayMedicas"
+            android:label="@string/title_activity_display_medicas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListeMedicas.ListeMedicasActivity"
+            android:label="@string/title_activity_liste_medicas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListeMedicas.AddMedicasActivity">
+            <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="barcode" />
+        </activity>
+        <activity
+            android:name=".notifications.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ListeMedicas.NotificationReceiver"
+            android:label="@string/title_activity_notification_receiver"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".EssaiNotif"
+            android:label="@string/title_activity_essai_notif"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,9 +80,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".NotificationPublisher" />
+
         <activity
-            android:name=".imageEssai.AddProfilCapt"
-            android:label="@string/title_activity_add_profil_capt"
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

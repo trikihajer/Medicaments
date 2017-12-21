@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 /**
  * Created by Lenovo on 20/11/2017.

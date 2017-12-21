@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:background="@color/colorPrimary"
+    android:background="@android:color/holo_green_dark"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -17,30 +17,30 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:width="200dp"
-        android:text="From Gallery"/>
+        android:text="Gallerie"/>
 
     <Button
         android:onClick="btnTakePhotoClicked"
         android:id="@+id/btnTakePhoto"
         android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnChoosePath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:width="200dp"
-        android:text="Take Photo"/>
+        android:text="Prendre photo"/>
 
     <Button
         android:onClick="btnExitClicked"
         android:id="@+id/btnExit"
-        android:background="@color/colorAccent"
+        android:background="@android:color/darker_gray"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btnTakePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="200dp"
-        android:text="Exit"/>
+        android:text="annuler"/>
 </RelativeLayout>

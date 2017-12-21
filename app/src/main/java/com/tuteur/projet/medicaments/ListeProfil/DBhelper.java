@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 /**
  * Created by Lenovo on 20/11/2017.
@@ -8,11 +8,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * This file is part of SqliteImage
- * <p/>
- * Created by GuoJunjun <junjunguo.com> on March 22, 2015.
- */
+
 public class DBhelper extends SQLiteOpenHelper {
     public static final String DB_NAME = "sqliteimage.db";
     public static final int DB_VERSION = 1;

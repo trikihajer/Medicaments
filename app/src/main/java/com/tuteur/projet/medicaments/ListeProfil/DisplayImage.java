@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -52,7 +52,7 @@ public class DisplayImage extends Activity {
                     job.getString("title"),
                     job.getString("description"),
                     job.getString("path"),
-                    job.getLong("datetimeLong")));
+                    job.getString("datetimeLong")));
         } catch (JSONException e) {
             e.printStackTrace();
         }

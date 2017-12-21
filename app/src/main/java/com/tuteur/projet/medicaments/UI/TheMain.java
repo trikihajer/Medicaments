@@ -2,7 +2,6 @@ package com.tuteur.projet.medicaments.UI;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -72,7 +71,7 @@ public class TheMain extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.profil_menu) {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+          /*  FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_the_main, new List_Profil_Fragment());
             ft.commit();
         } else if (id == R.id.conseil_menu) {
@@ -82,7 +81,7 @@ public class TheMain extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-
+*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

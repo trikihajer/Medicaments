@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.imageEssai;
+package com.tuteur.projet.medicaments.ListeProfil;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
@@ -62,7 +62,7 @@ public class ImageAdapter extends ArrayAdapter<MyImage> {
         // Get the data item for this position
         MyImage image = getItem(position);
         // set description text
-        viewHolder.description.setText(image.getDescription());
+       viewHolder.description.setText(image.getTitle());
         // set image icon
         viewHolder.imgIcon.setImageBitmap(ThumbnailUtils
                 .extractThumbnail(BitmapFactory.decodeFile(image.getPath()),
