@@ -1,15 +1,17 @@
-package com.tuteur.projet.medicaments.ListeProfil;
+package com.tuteur.projet.medicaments.DAO;
 
 /**
  * Created by Lenovo on 20/11/2017.
  */
 
 
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.tuteur.projet.medicaments.Controler.DBhelper;
+import com.tuteur.projet.medicaments.Model.metier.MyImage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +70,7 @@ public class DAOdb {
         List<MyImage> MyImages = new ArrayList<>();
         Cursor cursor =
                 database.query(DBhelper.TABLE_NAME, null, null, null, null,
-                        null, DBhelper.COLUMN_DATETIME + " DESC");
+                        null, null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             MyImage MyImage = cursorToMyImage(cursor);

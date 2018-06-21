@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.ListeProfil;
+package com.tuteur.projet.medicaments.Controler;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tuteur.projet.medicaments.Model.metier.MyImage;
 import com.tuteur.projet.medicaments.R;
 
 import java.util.ArrayList;

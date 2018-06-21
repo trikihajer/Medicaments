@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.ListeProfil;
+package com.tuteur.projet.medicaments.UI.ListeProfil;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -23,6 +23,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.tuteur.projet.medicaments.Controler.ImageAdapter;
+import com.tuteur.projet.medicaments.DAO.DAOdb;
+import com.tuteur.projet.medicaments.Model.metier.MyImage;
 import com.tuteur.projet.medicaments.R;
 
 import java.io.IOException;

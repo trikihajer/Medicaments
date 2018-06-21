@@ -1,14 +1,12 @@
-package com.tuteur.projet.medicaments.ListeProfil;
-
-/**
- * Created by Lenovo on 20/11/2017.
- */
-
+package com.tuteur.projet.medicaments.Model.metier;
 
 import java.text.SimpleDateFormat;
 
+/**
+ * Created by Lenovo on 22/12/2017.
+ */
 
-public class MyImage {
+public  class MyImage {
     private String title, sex, path;
     private String  datetimeLong;
     private SimpleDateFormat df = new SimpleDateFormat("MMMM d, yy  h:mm");

@@ -1,4 +1,4 @@
-package com.tuteur.projet.medicaments.ListeProfil;
+package com.tuteur.projet.medicaments.Controler;
 
 /**
  * Created by Lenovo on 20/11/2017.
@@ -23,7 +23,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String COLUMN_TITLE = "title";
     public static final String COLUMN_DATETIME = "datetime";
     public static final String COLUMN_DESCRIPTION = "description";
-    public static final String PRIMARY_KEY = "PRIMARY KEY (" + COLUMN_TITLE + "," + COLUMN_DATETIME + ")";
+    public static final String PRIMARY_KEY = "PRIMARY KEY (" + COLUMN_TITLE + ")";
 
     private static final String DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" +

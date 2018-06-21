@@ -19,7 +19,9 @@ public class MyDataConseil {
     public static Integer[] drawableArray = {R.drawable.eau, R.drawable.dej, R.drawable.proteine};
 
     public static Integer[] id_ = {0, 1, 2};
-    public  static  String[] url ={"http://www.google.com","http://www.google.com","http://www.google.com"};
+    public  static  String[] url ={"https://www.passeportsante.net/fr/Actualites/Dossiers/ArticleComplementaire.aspx?doc=eau_questions_sante_do",
+            "http://www.doctissimo.fr/html/nutrition/bien_manger/petit_dejeuner_equilibre.htm",
+            "http://www.doctissimo.fr/grossesse/diaporamas/aliments-conseilles-pendant-la-grossesse"};
 
 
 }
