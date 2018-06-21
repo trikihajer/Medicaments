@@ -15,7 +15,7 @@
                 android:id="@+id/imageViewConseil"
                 android:tag="image_tag"
                 android:scaleType="centerCrop"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:src="@drawable/abc"
                 android:layout_width="match_parent"
                 android:layout_margin="5dp"
@@ -32,18 +32,15 @@
                 android:padding="5dp" />
 
             <TextView
-                android:text="description conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseildescription conseil"
+                android:text="description conseil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewDescConseil"
                 android:padding="5dp"
                 android:textColor="#000"/>
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="116dp"
-        android:id="@+id/webvv"/>
-
-
-    />
-    </LinearLayout>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:id="@+id/webvv"/>
+</LinearLayout>

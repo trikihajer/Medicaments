@@ -236,4 +236,5 @@
     <string name="bg_picker_label">Page %s background: </string>
     <string name="title_activity_essai_notif">EssaiNotif</string>
     <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_conseil">ConseilActivity</string>
 </resources>

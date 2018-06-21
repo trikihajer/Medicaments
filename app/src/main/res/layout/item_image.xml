@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:background="@color/colorAccent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:drawable/dialog_holo_light_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/item_img_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/ic_menu_send"
+        android:layout_gravity="center_vertical"
         android:padding="5dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/item_img_infor"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mage_information"
-        android:textColor="@color/colorBlack"
+        android:text="mes_information"
         android:padding="5dp"
-        android:layout_marginLeft="10dp"/>
-</LinearLayout>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/item_img_icon" />
+</RelativeLayout>

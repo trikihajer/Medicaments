@@ -27,7 +27,16 @@
             android:background="@android:drawable/editbox_dropdown_light_frame"
             android:padding="3dp"
             android:layout_margin="3dp">
-
+            <TextView
+                android:text="Ajouter un nouveau membre..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="serif"
+                tools:textStyle="bold" />
             <android.support.design.widget.CoordinatorLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
